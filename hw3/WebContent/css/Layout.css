@@ -1,0 +1,37 @@
+nav {
+	background-color: #e3f2fd;
+}
+.title {
+	margin-left:130px;
+	font-size: 50px;
+}
+.divBox{
+	height:1000px;
+}
+.right{
+	height: 100%;
+	margin-left: 240px;
+}
+.left{
+	width: 200px;
+	float: left;
+	height:100%;
+	background: #e3f2fd;
+}
+.leftcontainer {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.rightcontainer {
+	margin-left:200px; 
+}
+.form{
+	width:500px;
+}
+.comment{
+	float: right;
+}
+.list-group-item {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
