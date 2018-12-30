@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Calculator </title>
+	<style>
+	.ans {
+		font-size: 15px;
+	}
+	.text {
+		font-size: 15px;
+	}
+	.text:focus {
+    	background-color: lightyellow;
+	}
+	.buttons {
+    	font-size: large;
+    	background-color: lightblue;
+	}
+	div {
+	    background-color: lightgray;
+	    width: 300px;
+	    margin: 3px;
+	    border-style: solid;
+	    border-color: gray;
+	}
+
+	</style>
+</head>
+<body style="text-align: center">
+	<div class="title" style="font-size: 24px; font-weight: bold; color: black;">
+		Simple Calculator
+	</div>
+	<div id="input">
+		X: <input type="text" class="text" name="x" id="x"> <br>
+		Y: <input type="text" class="text" name="y" id="y">	<br>
+	</div>
+	<script>
+		function calFunction(x,y,flag)
+		{	
+			if(flag == 0){	
+				return parseInt(x)+parseInt(y);
+			}
+			if(flag == 1){
+				return parseInt(x)-parseInt(y);
+			}
+			if(flag == 2){
+				return x*y;
+			}
+			if(flag == 3){
+				return x/y;
+			}
+		}
+	</script>
+	<div>
+		<input type="button" class="buttons" value="+" onclick="answer.value=calFunction(x.value,y.value,0)">
+		<input type="button" class="buttons" value="-" onclick="answer.value=calFunction(x.value,y.value,1)">
+		<input type="button" class="buttons" value="*" onclick="answer.value=calFunction(x.value,y.value,2)"> 
+		<input type="button" class="buttons" value="/" onclick="answer.value=calFunction(x.value,y.value,3)">
+		<br>
+	</div>
+	
+	<div>
+		Answer: <input type="text" class="ans" id="answer" readonly="readonly">
+	</div>
+</body>
+</html>
