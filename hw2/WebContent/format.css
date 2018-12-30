@@ -1,0 +1,21 @@
+.text {
+	font-size: 15px;
+}
+.text:focus {
+   	background-color: lightyellow;
+}
+.buttons {
+   	font-size: large;
+   	background-color: lightblue;
+}
+div {
+    background-color: lightgray;
+    width: 300px;
+    margin: 3px;
+    border-style: solid;
+    border-color: gray;
+    text-align: center;
+}
+h2 {
+	text-indent: 25px;
+}
